@@ -1,0 +1,66 @@
+.emph-red {
+    font-style: bold;
+    color: #f92672;
+}
+
+.emph-blue {
+    color: #66d9ef;
+}
+
+.emph-purple {
+    color: #bf79db;
+}
+
+.emph-green {
+    color: #a6e22e;
+}
+
+.screen-window {
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+
+
+.screen-window:hover {
+    box-shadow: 0 0 50px rgb(191, 121, 219,0.8);
+}
+
+
+.centered-list {
+    display:inline-block;
+    text-align: left;
+    padding-top: 1cm;
+    padding-bottom: 1cm;
+}
+
+.left-list {
+    display:inline-block;
+    text-align: left;
+    padding-top: 1cm;
+    padding-bottom: 1cm;
+    padding-left:1cm;
+}
+
+.heading-gif {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.small-instruction {
+    font-style: italic;
+    font-size:25pt;
+    color: #3f3f3f;
+}
+
+.fragment.blur {
+    filter: blur(5px);
+}
+
+.fragment.blur.visible {
+    filter: none;
+}
+
+.katex { font-size: 1em !important; }
+
