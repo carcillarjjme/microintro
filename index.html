@@ -726,8 +726,8 @@ String firstPart = "Went over the loop ";
 String message = "";
 
 for (int i = 0; i < NUM_REPEAT; i++) {
-	message = String(firstPart + String(i+1) + " times");
-	print(message);
+	message = firstPart + String(i+1) + String(" times");
+	Serial.println(message);
 }
 							</code>
 						</pre>
@@ -745,19 +745,19 @@ for (int i = 0; i < NUM_REPEAT; i++) {
 //prints number starting from 1 increasing by 2
 //while the number is less than 10
 for (int i = 1; i < 10; i += 2) {
-	print(i); //output -> 1, 3, 5 , 7, 9
+	Serial.println(i); //output -> 1, 3, 5 , 7, 9
 }
 
 //prints number starting from 15 decreasing by 1
 //while the number is greater than 10
 for (int j = 15; j > 10; j--){
-	print(j); //output -> 15, 14, 13, 12, 11
+	Serial.println(j); //output -> 15, 14, 13, 12, 11
 }
 
 //prints powers of 2
 //while the value is less than 100
 for (int k = 1; k < 100 ; k = 2*k){
-	print(k); //output -> 1, 2, 4, 8, 16, 32, 64
+	Serial.println(k); //output -> 1, 2, 4, 8, 16, 32, 64
 }
 							</code>
 						</pre>
@@ -774,7 +774,7 @@ for (int k = 1; k < 100 ; k = 2*k){
 							<code class="arduino" data-line-numbers data-noescape data-trim>
 int myNumber = 0;
 while (myNumber < 10) {
-	print(myNumber); //output -> 0, 2, 4, 6, 8
+	Serial.println(myNumber); //output -> 0, 2, 4, 6, 8
 	myNumber += 2;
 }
 							</code>
@@ -807,7 +807,7 @@ while (myNumber < 10) {
 		break; //end loop here
 	}
 
-	print(myNumber); //output -> 0, 4, 6
+	Serial.println(myNumber); //output -> 0, 4, 6
 	myNumber += 2;
 }
 							</code>
@@ -825,7 +825,7 @@ while (myNumber < 10) {
 							<code class="arduino" data-line-numbers data-noescape data-trim>
 int myNumber = 0;
 do {
-	print(myNumber); //output -> 0, 2, 4, 6, 8
+	Serial.println(myNumber); //output -> 0, 2, 4, 6, 8
 	myNumber += 2;
 } while (myNumber < 10);
 							</code>
@@ -866,8 +866,8 @@ String firstPart = "Went over the loop ";
 String message = "";
 
 for (int i = 0; i < NUM_REPEAT; i++) {
-	message = String(firstPart + String(i+1) + " times.");
-	print(message);
+	message = firstPart + String(i+1) + String(" times.");
+	Serial.println(message);
 }
 											</code>
 										</pre>
@@ -878,7 +878,7 @@ for (int i = 0; i < NUM_REPEAT; i++) {
 											<code class="arduino" data-line-numbers data-noescape data-trim>
 int i = 0;
 while (i < 10) {
-	print(i);
+	Serial.println(i);
 }
 											</code>
 										</pre>
